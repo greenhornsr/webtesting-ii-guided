@@ -8,8 +8,12 @@ export default function Players({players = []}) {
     return (
         <ul>
             {players.map(p => (
-                <li key={p.id}>{p.name}</li>
+                <li key={p.id} data-testid="players" >{p.name}</li>
             ))}
         </ul>
     )
 }
+
+
+// displays the list of players
+// displays ALL players
